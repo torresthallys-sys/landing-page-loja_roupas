@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VESTE - Moda e Estilo</title>
+  <meta name="description" content="Loja de roupas VESTE - Moda feminina e masculina.">
+  <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-grid">
+      <a href="#" class="nav-logo">VESTE</a>
+      <ul class="nav-links">
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#colecao">Coleção</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="cart-btn" class="cart-btn" aria-label="Abrir carrinho">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+          <span id="cart-badge" class="cart-badge" style="display:none;">0</span>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="mobile-menu">
+    <div class="mobile-menu-inner">
+      <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Fechar menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+      <ul class="mobile-nav-links">
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#colecao">Coleção</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="/assets/video/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1 class="display reveal">Vista sua<br>melhor versão</h1>
+        <p class="reveal">Descubra a nova coleção com peças exclusivas que unem conforto, elegância e estilo para o seu dia a dia.</p>
+        <a href="#colecao" class="btn btn-primary reveal">Ver Coleção</a>
+      </div>
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section id="categorias" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Nossas Categorias</h2>
+          <p class="muted">Encontre o que combina com você</p>
+        </div>
+        <div id="cat-grid" class="cat-grid stagger">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- COLECAO -->
+    <section id="colecao" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Coleção Atual</h2>
+          <div id="filters-wrap" class="filters-wrap">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+        <div id="catalog-grid" class="product-grid stagger">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section bg-elev">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <span class="eyebrow">Nossa História</span>
+          <h2>A essência da VESTE</h2>
+          <p>Nascemos com o propósito de redefinir o básico. Cada peça é cuidadosamente pensada para oferecer o máximo de conforto sem abrir mão do estilo. Acreditamos que a verdadeira elegância está na simplicidade e na qualidade dos materiais.</p>
+          <p>Nossa produção é ética e valoriza a mão de obra local, garantindo que cada etapa do processo reflita nossos valores de sustentabilidade e respeito.</p>
+        </div>
+        <div class="about-img-wrap reveal-scale">
+          <img src="/assets/images/produto-02.jpg" alt="Sobre a Veste" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section id="diferenciais" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Por que escolher a VESTE</h2>
+        </div>
+        <div class="features-grid stagger">
+          <div class="feature-card">
+            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+            <h3>Qualidade Premium</h3>
+            <p>Tecidos selecionados para garantir durabilidade e toque suave.</p>
+          </div>
+          <div class="feature-card">
+            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <h3>Design Exclusivo</h3>
+            <p>Modelagens únicas criadas por nossos designers.</p>
+          </div>
+          <div class="feature-card">
+            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <h3>Produção Local</h3>
+            <p>Valorizamos o trabalho nacional e a produção ética.</p>
+          </div>
+          <div class="feature-card">
+            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+            <h3>Compra Segura</h3>
+            <p>Atendimento personalizado e garantia de satisfação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section cta-section">
+      <div class="container reveal">
+        <h2>Precisa de ajuda?</h2>
+        <p>Nossa equipe está pronta para te atender e tirar todas as suas dúvidas.</p>
+        <a href="https://wa.me/5562999999999" target="_blank" class="btn btn-whatsapp">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.418-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 3.825 0 6.938 3.112 6.938 6.937 0 3.825-3.113 6.938-6.938 6.938z"></path></svg>
+          Falar com Atendimento
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>VESTE</h3>
+        <p class="muted">Elevando o básico à sua melhor versão.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#colecao">Coleção</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li>WhatsApp: (62) 99999-9999</li>
+          <li>Email: contato@veste.com</li>
+          <li>Goiânia, GO</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="muted">&copy; 2026 VESTE. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <aside id="cart-drawer" class="drawer">
+    <div class="drawer-overlay" id="cart-overlay"></div>
+    <div class="drawer-content">
+      <div class="drawer-head">
+        <h2>Seu Carrinho</h2>
+        <button id="cart-close" class="btn-ghost" aria-label="Fechar">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <div id="cart-body" class="drawer-body">
+        <!-- Rendered via JS -->
+      </div>
+      <div class="drawer-foot">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total-value">R$ 0,00</span>
+        </div>
+        <button id="cart-checkout" class="btn btn-whatsapp" style="width:100%">Finalizar no WhatsApp</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- PRODUCT MODAL -->
+  <div id="product-modal" class="modal">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-inner">
+      <button id="modal-close" class="modal-close" aria-label="Fechar">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+      <div class="modal-grid">
+        <div class="modal-img-wrap">
+          <img id="modal-img" src="" alt="">
+        </div>
+        <div class="modal-body">
+          <h2 id="modal-title"></h2>
+          <p id="modal-price" class="product-price"></p>
+          <p id="modal-desc" class="muted"></p>
+          
+          <div class="modal-sizes">
+            <span class="eyebrow">Tamanho</span>
+            <div id="modal-size-grid" class="size-grid"></div>
+          </div>
+          
+          <div class="modal-qty">
+            <span class="eyebrow">Quantidade</span>
+            <div class="qty-ctrl">
+              <button id="modal-qty-minus" data-qty="-1">-</button>
+              <span id="modal-qty-val">1</span>
+              <button id="modal-qty-plus" data-qty="1">+</button>
+            </div>
+          </div>
+          
+          <div class="modal-actions">
+            <button id="modal-add" class="btn btn-primary">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast">Produto adicionado!</div>
+
+  <script type="module" src="/src/js/app.js"></script>
+</body>
+</html>
